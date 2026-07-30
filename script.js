@@ -1,37 +1,93 @@
-document.addEventListener("DOMContentLoaded", () => {
+let products=[];
 
-    const productList = document.getElementById("product-list");
+const list=document.getElementById("product-list");
 
-    fetch("products.json")
-        .then(response => response.json())
-        .then(products => {
+const search=document.getElementById("searchInput");
 
-            products.forEach(product => {
+const category=document.getElementById("categoryFilter");
 
-                const card = document.createElement("div");
+fetch("products.json")
 
-                card.className = "card";
+.then(r=>r.json())
 
-                card.innerHTML = `
-                    <img src="${product.resim}" alt="${product.ad}" class="product-image">
+.then(data=>{
 
-                    <h3>${product.ad}</h3>
+products=data;
 
-                    <p>${product.aciklama}</p>
-
-                    <h4>${product.fiyat} ₺ / ${product.birim}</h4>
-
-                    <a class="hero-btn"
-                    target="_blank"
-                    href="https://wa.me/905512530087?text=Merhaba,%20${encodeURIComponent(product.ad)}%20ürünü%20hakkında%20bilgi%20almak%20istiyorum.">
-                    WhatsApp Sipariş
-                    </a>
-                `;
-
-                productList.appendChild(card);
-
-            });
-
-        });
+renderProducts(products);
 
 });
+
+function renderProducts(array){
+
+list.innerHTML="";
+
+array.forEach(product=>{
+
+list.innerHTML+=`
+
+<div class="card">
+
+<img src="${product.resim}" class="product-image">
+
+<h3>${product.ad}</h3>
+
+<p>${product.aciklama}</p>
+
+<h4>${product.fiyat} ₺ / ${product.birim}</h4>
+
+<button onclick="order('${product.ad}')">
+
+WhatsApp Sipariş
+
+</button>
+
+</div>
+
+`;
+
+});
+
+}
+
+function filterProducts(){
+
+let filtered=products.filter(p=>{
+
+const searchMatch=p.ad.toLowerCase().includes(search.value.toLowerCase());
+
+const categoryMatch=
+
+category.value==="Hepsi"
+
+||
+
+p.kategori===category.value;
+
+return searchMatch&&categoryMatch;
+
+});
+
+renderProducts(filtered);
+
+}
+
+search.addEventListener("keyup",filterProducts);
+
+category.addEventListener("change",filterProducts);
+
+function order(product){
+
+const phone="905512530087";
+
+const text=`Merhaba, ${product} siparişi vermek istiyorum.`;
+
+window.open(
+
+`https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
+
+"_blank"
+
+);
+
+}
