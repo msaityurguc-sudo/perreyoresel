@@ -61,7 +61,34 @@ Doğal • Katkısız • Güvenilir Lezzet
 
 
 <section id="urunler" class="products">
+<div class="toolbar">
 
+<input
+id="searchInput"
+type="text"
+placeholder="🔍 Ürün Ara...">
+
+<select id="categoryFilter">
+
+<option value="Hepsi">Tüm Kategoriler</option>
+
+<option>Peynirler</option>
+
+<option>Zeytinler</option>
+
+<option>Salçalar</option>
+
+<option>Baharatlar</option>
+
+<option>Kahvaltılıklar</option>
+
+<option>Bakliyatlar</option>
+
+<option>Kurutmalıklar</option>
+
+</select>
+
+</div>
 <h2>Ürün Kategorileri</h2>
 
 <div id="product-list" class="cards">
