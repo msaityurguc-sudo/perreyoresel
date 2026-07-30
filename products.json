@@ -1,1 +1,56 @@
-
+[
+  {
+    "id": 1,
+    "kategori": "Peynirler",
+    "ad": "Örgü Peynir",
+    "fiyat": 495,
+    "birim": "kg",
+    "resim": "images/products/orgu-peynir.jpg",
+    "aciklama": "Doğal ve geleneksel yöntemlerle üretilmiştir."
+  },
+  {
+    "id": 2,
+    "kategori": "Peynirler",
+    "ad": "Dil Peyniri",
+    "fiyat": 495,
+    "birim": "kg",
+    "resim": "images/products/dil-peyniri.jpg",
+    "aciklama": "Kahvaltılar için ideal lezzet."
+  },
+  {
+    "id": 3,
+    "kategori": "Peynirler",
+    "ad": "Salamura İnek Peyniri",
+    "fiyat": 350,
+    "birim": "kg",
+    "resim": "images/products/salamura.jpg",
+    "aciklama": "Geleneksel salamura lezzeti."
+  },
+  {
+    "id": 4,
+    "kategori": "Peynirler",
+    "ad": "Taze Beyaz Peynir",
+    "fiyat": 300,
+    "birim": "kg",
+    "resim": "images/products/beyaz-peynir.jpg",
+    "aciklama": "Günlük taze üretim."
+  },
+  {
+    "id": 5,
+    "kategori": "Zeytinler",
+    "ad": "Siyah Zeytin",
+    "fiyat": 350,
+    "birim": "kg",
+    "resim": "images/products/siyah-zeytin.jpg",
+    "aciklama": "Doğal fermente siyah zeytin."
+  },
+  {
+    "id": 6,
+    "kategori": "Zeytinler",
+    "ad": "Kırma Yeşil Zeytin",
+    "fiyat": 300,
+    "birim": "kg",
+    "resim": "images/products/yesil-zeytin.jpg",
+    "aciklama": "Taş kırma usulü hazırlanmıştır."
+  }
+]
