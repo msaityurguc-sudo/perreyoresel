@@ -64,38 +64,7 @@ Doğal • Katkısız • Güvenilir Lezzet
 
 <h2>Ürün Kategorileri</h2>
 
-<div class="cards">
-
-<div class="card">
-🧀
-<h3>Peynirler</h3>
-</div>
-
-<div class="card">
-🫒
-<h3>Zeytinler</h3>
-</div>
-
-<div class="card">
-🌶️
-<h3>Baharatlar</h3>
-</div>
-
-<div class="card">
-🥣
-<h3>Kahvaltılıklar</h3>
-</div>
-
-<div class="card">
-🥫
-<h3>Salçalar</h3>
-</div>
-
-<div class="card">
-🍆
-<h3>Kurutmalıklar</h3>
-</div>
-
+<div id="product-list" class="cards">
 </div>
 
 </section>
