@@ -89,6 +89,7 @@ placeholder="🔍 Ürün Ara...">
 </select>
 
 </div>
+<div id="product-list" class="cards"></div>
 <h2>Ürün Kategorileri</h2>
 
 <div id="product-list" class="cards">
