@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERRE Yöresel Ürünler</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+
+<img src="assets/logo.png" alt="PERRE">
+
+</div>
+
+<nav>
+
+<a href="#">Ana Sayfa</a>
+<a href="#urunler">Ürünler</a>
+<a href="#hakkimizda">Hakkımızda</a>
+<a href="#iletisim">İletişim</a>
+
+</nav>
+
+<a class="btn" href="https://wa.me/905512530087" target="_blank">
+WhatsApp
+</a>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>PERRE Yöresel Ürünler</h1>
+
+<p>
+Doğal • Katkısız • Güvenilir Lezzet
+</p>
+
+<a href="#urunler" class="hero-btn">
+Ürünleri İncele
+</a>
+
+</div>
+
+</section>
+
+
+<section id="urunler" class="products">
+
+<h2>Ürün Kategorileri</h2>
+
+<div class="cards">
+
+<div class="card">
+🧀
+<h3>Peynirler</h3>
+</div>
+
+<div class="card">
+🫒
+<h3>Zeytinler</h3>
+</div>
+
+<div class="card">
+🌶️
+<h3>Baharatlar</h3>
+</div>
+
+<div class="card">
+🥣
+<h3>Kahvaltılıklar</h3>
+</div>
+
+<div class="card">
+🥫
+<h3>Salçalar</h3>
+</div>
+
+<div class="card">
+🍆
+<h3>Kurutmalıklar</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="hakkimizda">
+
+<h2>Hakkımızda</h2>
+
+<p>
+
+PERRE Yöresel Ürünler olarak
+doğal, katkısız ve kaliteli yöresel ürünleri
+güvenle sofralarınıza ulaştırıyoruz.
+
+</p>
+
+</section>
+
+
+<section id="iletisim">
+
+<h2>İletişim</h2>
+
+<p>
+
+📍 Vişnelik Mah. Öğretmenler Bulvarı 24/B
+Odunpazarı / Eskişehir
+
+</p>
+
+<p>
+
+☎ 0551 253 00 87
+
+</p>
+
+<a class="hero-btn"
+href="https://wa.me/905512530087"
+target="_blank">
+
+WhatsApp'tan Sipariş Ver
+
+</a>
+
+</section>
+
+
+<footer>
+
+© 2026 PERRE Yöresel Ürünler
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html> 
